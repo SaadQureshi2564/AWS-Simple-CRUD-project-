@@ -1,0 +1,103 @@
+/* Basic styling for the app container and buttons */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+}
+
+.App {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  background: #0078d4;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #005fa3;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.file-list {
+  margin-top: 24px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.file-list th, .file-list td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.file-list tr:hover {
+  background: #f0f6ff;
+}
+
+.file-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.file-actions button {
+  padding: 4px 10px;
+  font-size: 0.95rem;
+  border-radius: 3px;
+  border: none;
+  background: #eaeaea;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.file-actions button:hover {
+  background: #d0e7ff;
+  color: #0078d4;
+}
+
+.status-message {
+  margin: 12px 0;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.status-message.success {
+  background: #e6f9ed;
+  color: #1a7f37;
+  border: 1px solid #b7ebc6;
+}
+
+.status-message.error {
+  background: #fff0f0;
+  color: #d93025;
+  border: 1px solid #f5c6cb;
+}
